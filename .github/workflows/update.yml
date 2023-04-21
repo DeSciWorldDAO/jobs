@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,19 +36,18 @@ jobs:
       - name: Get changed files
         id: changed-files
         run: |
-            if ${{ github.event_name == 'pull_request' }}; then
-                echo "changed_files=$(git diff --name-only -r HEAD^1 HEAD | xargs)" >> $GITHUB_OUTPUT
-            else
-                echo "changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | xargs)" >> $GITHUB_OUTPUT
-            fi
+          if ${{ github.event_name == 'pull_request' }}; then
+              echo "changed_files=$(git diff --name-only -r HEAD^1 HEAD | xargs)" >> $GITHUB_OUTPUT
+          else
+              echo "changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | xargs)" >> $GITHUB_OUTPUT
+          fi
       - name: List changed files
         run: |
-            for file in ${{ steps.changed-files.outputs.changed_files }}; do
-                echo "$file was changed"
-            done
+          for file in ${{ steps.changed-files.outputs.changed_files }}; do
+              echo "$file was changed"
+          done
       - uses: dkershner6/post-api-call-action@v1
         with:
           url: ${{ secrets.API_URL }}job/git
-          headers: "{\"Authorization\": \"${{ secrets.API_KEY }}\"}"
-          data: "{\"changedFiles\": \"${{ steps.changed-files.outputs.changed_files }}\"}"
-          
+          headers: '{"Authorization": "${{ secrets.API_KEY }}"}'
+          data: '{"changedFiles": "${{ steps.changed-files.outputs.changed_files }}"}'
