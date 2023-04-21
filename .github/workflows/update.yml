@@ -48,7 +48,7 @@ jobs:
             done
       - uses: dkershner6/post-api-call-action@v1
         with:
-          url: ${{ secrets.API_URL }}git
+          url: ${{ secrets.API_URL }}job/git
           headers: "{\"Authorization\": \"${{ secrets.API_KEY }}\"}"
           data: "{\"changedFiles\": \"${{ steps.changed-files.outputs.changed_files }}\"}"
           
