@@ -1,3 +1,13 @@
 {
-  "id": 1
+  "externalId": 1,
+  "title": "UI/UX Designer",
+  "logoUrl": "https://picsum.photos/1280/720",
+  "contractType": "On demand (Contractor)",
+  "status": "active",
+  "description": "This is a job post for a software engineer position at DeSci World Inc. ,we are looking for a software engineer to join our team. must have experience in React, Node, and Typescript.",
+  "createdAt": "2023-04-19T03:13:17.471Z",
+  "location": "Remote",
+  "compensation": "to be discussed",
+  "deleted": false,
+  "applyLink": "mailto:carlos@gmail.com?cc=someoneelse@theirsite.com,another@thatsite.com,me@mysite.com&bcc=lastperson@theirsite.com&subject=Big%20News&body=Body-goes-here"
 }
