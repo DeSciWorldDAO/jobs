@@ -1,13 +1,13 @@
 {
   "externalId": 2,
-  "title": "Software Tester",
-  "logoUrl": "https://picsum.photos/1280/720",
+  "title": "Senior DevOps Engineer",
+  "logoUrl": "https://uploads-ssl.webflow.com/636c328376342c362ec5b20d/63767d0e6beb8c1f67aab1f1_LabDAO_Logo.svg",
   "contractType": "On demand (Contractor)",
   "status": "Active",
-  "description": "This is a job post for a software engineer position at DeSci World Inc. ,we are looking for a software engineer to join our team. must have experience in React, Node, and Typescript.",
+  "description": "As a Senior DevOps Engineer, your objective will be to build and maintain a reliable open infrastructure for containerized scientific compute apps.",
   "createdAt": "2023-04-19T03:13:18.295Z",
   "location": "Remote",
   "compensation": "to be discussed",
   "deleted": false,
-  "applyLink": "https://linkedin.com"
+  "applyLink": "https://labdao.notion.site/Senior-DevOps-Engineer-325a0f72853249ef8bc65159f1cfd4c3"
 }
