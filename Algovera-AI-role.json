@@ -1,0 +1,14 @@
+{
+  "externalId": "Algovera-AI-role",
+  "title": "AI-role",
+  "company": "Algovera",
+  "logoUrl": "https://i.imgur.com/oO0AbC3.png",
+  "contractType": "TBD",
+  "status": "Active",
+  "description":"The role's responsibilities include: prototyping LLM workflows and agents, writing evals for LLM workflows and agents, deploying LLM workflows and agents in our Python backend, and building Algovera’s new LLM programming framework in Python",
+  "createdAt": "2023-07-31",
+  "location": "remote",
+  "compensation": "TBD",
+  "deleted": false,
+  "applyLink": "hello@algovera.ai"
+}
